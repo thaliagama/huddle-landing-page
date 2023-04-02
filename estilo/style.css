@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    color: aliceblue;
+    background-image: url(../images/bg-desktop.svg);
+    background-color: rgb(81, 30, 97);
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#logo{
+    width: 150px;
+    margin: 50px 0 0 50px;
+}
+
+.container{
+  display: flex;
+  margin-top: 50px;
+}
+
+#mockup{
+    margin-left: 50px;
+    width: 650px;
+    height: 400px;
+}
+
+#content{
+    margin: 30px 0 0 50px;
+    width: 500px;
+}
+
+h1{
+    font-size: 2em;
+}
+
+button{
+    margin-top: 30px;
+    width: 150px;
+    color: rgb(81, 30, 97);
+    background-color: aliceblue;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:hover{
+    transition: 0.2s;
+    background-color: #F5C6EC;
+}
+
+ul{
+    display: flex;
+    justify-content: end;
+    margin-top: 100px;
+}
+
+li{
+    list-style-type: none;
+    font-size: 1.6em;
+    margin-left: 10px;
+}
+
+li :hover{
+    color: #F5C6EC;
+    transition: 0.2s;
+}
+
+a{
+    color: rgb(40, 7, 71);
+}
+
+.attribution { 
+    margin-top: 100px;
+    padding: 10px;
+    font-size: 12px; 
+    text-align: center;
+}
+    
+.attribution a { 
+    color:#F5C6EC; 
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.attribution a:hover{
+    color: rgb(40, 7, 71);
+}
+
+@media screen and (max-width: 600px) {
+
+    body{
+        background-image: url(../images/bg-mobile.svg);
+        background-position: top right;
+        background-size: contain;
+    }
+    
+    #logo{
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+
+    .container{
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #content{
+        margin-left: 30px;
+        width: 300px;
+    }
+
+    h1{
+        font-size: 1.7em;
+    }
+
+    #mockup{
+        margin-left: 30px;
+        width: 300px;
+        height: 200px;
+    }
+
+    ul{
+        justify-content: center;
+        margin-right: 45px;
+    }
+  
+}
